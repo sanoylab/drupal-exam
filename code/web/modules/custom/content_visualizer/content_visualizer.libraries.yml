@@ -1,0 +1,8 @@
+content_visualizer_css:
+  version: 1.0
+  css:
+    theme:
+      css/c3.css: {}
+  js: 
+    js/main.js: {}
+    js/c3.js: {}

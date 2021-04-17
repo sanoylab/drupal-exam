@@ -1,0 +1,5 @@
+<?php 
+
+function content_visualizer_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'content_visualizer/content_visualizer_css';
+}

@@ -1,0 +1,239 @@
+{#
+/**
+ * @file
+ * Bartik's theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.highlighted: Items for the highlighted region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.featured_top: Items for the featured top region.
+ * - page.content: The main content of the current page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.featured_bottom_first: Items for the first featured bottom region.
+ * - page.featured_bottom_second: Items for the second featured bottom region.
+ * - page.featured_bottom_third: Items for the third featured bottom region.
+ * - page.footer_first: Items for the first footer column.
+ * - page.footer_second: Items for the second footer column.
+ * - page.footer_third: Items for the third footer column.
+ * - page.footer_fourth: Items for the fourth footer column.
+ * - page.footer_fifth: Items for the fifth footer column.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+	<div class="container-fluid">
+		<div class="psBody">
+			<div class="no-gutters banner-row row">
+				<div class="col-12 psNewBanner no-gutters ">
+					<div class="psNewBanner_overlay no-gutters ">
+						<div class="psNewBanner_left_box">
+
+							<div class="psNewBanner_left_box_inner">
+								<a href="{{ path('<front>') }}" alt="MYPSUP Home">
+									<div class="psNewBanner_left_box_inner_top">
+										<img src="{{base_path ~ directory}}/PSUP-txt.png"/>
+
+									</div>
+								</a>
+								<div class="psNewBanner_left_box_inner_bottom">
+									<div class="psBannerBottomIcons_btm">
+										<a href="http://www.acp.int/node">
+											<span class="link_apc"></span>
+										</a>
+										<a href="https://ec.europa.eu/commission/index_en">
+											<span class="link_euro"></span>
+										</a>
+										<a href="https://unhabitat.org/">
+											<span class="link_habitat"></span>
+										</a>
+									</div>
+								</div>
+								<div class="psNewBanner_left_box_nav_button">
+									<button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+								</div>
+
+
+							</div>
+
+						</div>
+
+						<div class="psNewBanner_right_box">
+							<div class="psNewBanner_right_box_top">
+								<div
+									class="psNewBanner_right_box_inner">
+									<!-- <div class="psBannerTopMenu">
+																																						FAQ  |  CONTACT  |  NEWSLETTER  |  FRANCAIS
+																																		</div>  -->
+									<div class="covid-19-button">
+										<a class="covid-19" href="https://www.mypsup.org/covid-19/" alt="COVID-19 Response"></a>
+									</div>
+									<div class="psBannerTopMenu">
+
+										<div class="links-and-buttons">
+											<div class="psBannerContact">
+												<a href="https://www.mypsup.org/contuct_us">CONTACT
+												</a>
+											</div>
+											<div class="psBannerNewsLetter">
+												<a href="/library_files/downloads/Newsletters/PSUP_Newsletter_-_April_2021.pdf">
+													NEWSLETTER
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="psBannerIcons">
+										<a class="e-learning" href="https://elearning.mypsup.org/home" alt="e-learning"></a>
+										<a class="facebook" href="https://www.facebook.com/UNHABITAT/" alt="facebook"></a>
+										<a class="twitter" href="https://twitter.com/UNHABITAT" alt="Twitter"></a>
+										<a class="Linkedin" href="https://ke.linkedin.com/company/un-habitat-united-nation-human-settlements-programme-" alt="Linkedin"></a>
+										<a class="Instagram" href="https://www.instagram.com/unhabitat/" alt="Instagram"></a>
+										<a class="youtube" href="https://www.youtube.com/channel/UCxkn7WqOdNdNB3AfG65NQ_A" alt="Youtube"></a>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="psNewBanner_right_box_bottom">
+								<div class="psNewBanner_right_box_bottom_icon">
+									<img class="b-lazy" src="themes/un_habitat_theme/images/PSUP-Header-building.png" alt="PSUP">
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="res-nav-container mt-3 mb-3 " id="top_menu">
+				<div class="row h-10">
+					<div class="res-nav-col col-12 col-xl-10 pl-0 pl-xl-5">
+						<nav class="res-navbar navbar navbar-expand-lg navbar-light py-0 shadow-sm ">
+							<div class="container">
+								{{page.header_menu}}
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="no-gutters row">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12" style="padding-top: 50px">
+							<h1> Page not found :( </h1>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+	
+
+			<footer class="page-footer mt-sm-3">
+				<div class="container-fluid text-center pt-md-5">
+					<div class="row">
+						<div class="col-4 mt-md-0 mt-4 text-md-left ml-md-4">
+							<div class="row">
+
+								<a style="width: 100%;" href="https://unhabitat.org" target="_blank">
+									<div class="col-md-12 page-footer_ctr_left_ctr_top"></div>
+								</a>
+								<div class="col-md-12 page-footer_ctr_left_text pt-md-5 pl-md-1 ml-md-1">
+									<a href="https://unhabitat.org/topic/slum-upgrading">www.unhabitat.org/psup</a>
+									<br>
+									Email: unhabitat-psup@un.org<br><br>
+									Ms Kerstin Sommer<br>
+									Slum Upgrading Unit Leader,<br>
+									Project Leader PSUP<br>
+									kerstin.sommer@un.org
+								</div>
+							</div>
+						</div>
+						<hr class="clearfix d-md-none pb-3">
+						<div class="col-3 mt-md-0 mt-4 text-md-left page-footer_ctr-center">
+							<h3 class="mt-5" style="z-index: 1;">Links</h3>
+							<hr>
+							<a class="footer_link_apc" href="http://www.acp.int" alt="apc" style="margin-right: 20px;"></a>
+							<a class="footer_link_euro" href="https://ec.europa.eu/commission/index_en" alt="Habitat"></a>
+						</div>
+						<div class="col-4 mt-md-0 mt-4 page-footer_ctr-right">
+							<div class="row">
+								<div class="col-sm-12 mt-5 page-footer_ctr-right_icons">
+									<a class="e-learning_footer" href="https://elearning.mypsup.org/home" alt="e-learning"></a>
+									<a class="facebook" href="https://www.facebook.com/UNHABITAT/" alt="facebook"></a>
+									<a class="twitter" href="https://twitter.com/UNHABITAT" alt="Twitter"></a>
+									<a class="Linkedin" href="https://ke.linkedin.com/company/un-habitat-united-nation-human-settlements-programme-" alt="Linkedin"></a>
+									<a class="Instagram" href="https://www.instagram.com/unhabitat/" alt="Instagram"></a>
+									<a class="youtube" href="https://www.youtube.com/channel/UCxkn7WqOdNdNB3AfG65NQ_A" alt="Youtube"></a>
+								</div>
+								<div class="col-sm-12 mt-sm-5 page-footer_ctr-right_news">
+									Sign up to our newsletter
+									<br>
+									<div class="input-group">
+										<input type="text">
+										<span class="input-group-btn">
+											<button type="button" class="btn btn-primary">
+												<i class="fa fa-envelope-o"></i>
+											</button>
+										</span>
+									</div>
+									<div class="page-footer_ctr-right_newsletter">
+
+										<a href="/library_files/downloads//Newsletters/PSUP_Newsletter_-_April_2021.pdf" target="_blank" alt="PSUP Newsletter April 2021">April 2021 Newsletter</a><br>
+										<a href="/library_files/downloads//Newsletters/PSUP_Newsletter_-_December_2020-2.pdf" target="_blank" alt="PSUP Newsletter December 2020">December 2020 Newsletter</a><br>
+										<a href="/library_files/downloads/PSUP_Newsletter_September_2020.pdf" target="_blank" alt="PSUP Newsletter September 2020">September 2020 Newsletter</a><br>
+										<a href="https://www.mypsup.org/sites/default/files/pdf/PSUP_Newsletter_May_2020.pdf" target="_blank" alt="PSUP Newsletter May 2020">May 2020 Newsletter</a><br>
+										<a href="https://www.mypsup.org/sites/default/files/pdf/PSUP_Newsletter_December_2019.pdf" target="_blank" alt="PSUP Newsletter December 2019">December 2019 Newsletter</a><br>
+										<a href="https://www.mypsup.org/sites/default/files/pdf/PSUP_Newsletter_September_2019.pdf" target="_blank" alt="PSUP Newsletter September 2019">September 2019 Newsletter</a><br>
+										<a href="https://www.mypsup.org/sites/default/files/pdf/PSUP_Newsletter_July_2019.pdf" target="_blank" alt="PSUP Newsletter July 2019">July 2019 Newsletter</a><br>
+										<a href="https://www.mypsup.org/sites/default/files/pdf/PSUP_Newsletter_February_2019.pdf" target="_blank" alt="PSUP Newsletter February 2019">February 2019 Newsletter</a><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mt-md-5 footer-copyright text-sm-center py-3">
+					<span class="h4">Copyright © 2020 UN-Habitat | unhabitat-info@un.org</span>
+				</div>
+			</footer>
+		</div>
+

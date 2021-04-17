@@ -1,0 +1,14 @@
+content_visualizer.content:
+  path: "/vizualization"
+  defaults:
+    _controller: '\Drupal\content_visualizer\Controller\ContentVisualizerController::content'
+    _title: "Chart"
+  requirements:
+    _permission: "access content"
+content_visualizer.test:
+  path: "/test"
+  defaults:
+    _controller: 'Drupal\content_visualizer\Controller\ContentVisualizerController::test'
+    _title: "Testing"
+  requirements:
+    _permission: "access content"

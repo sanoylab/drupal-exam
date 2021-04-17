@@ -1,0 +1,800 @@
+/* psNewBanner 
+body.navbar-is-fixed-top {
+	margin-top: 0px;
+}*/
+.banner-row.row {
+	width: 100% !important;
+} 
+.psNewBanner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 24.5vh;
+	position: relative;
+	min-height: 159px;	/*min-width: 764px;*/
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/* psNewBanner_overlay */
+.psNewBanner_overlay {
+	width: 100%;
+	height: 100%;
+	z-index: 0; /* Specify a stack order in case you're using a different order for other  */
+	position: relative;
+	background-image: url("../images/banner.png");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+	background-position-x: left;
+	background-position-y: top;
+}
+
+/* psNewBanner_left_box */
+.psNewBanner_left_box {
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+	z-index: 10;
+}
+
+/* psNewBanner_left_box_inner */
+.psNewBanner_left_box_inner {
+	float: right;
+	width: 69%;
+	height: 100%;   /* border: 2px solid red;*/
+	position: relative;
+	z-index: 10;
+}
+
+/* psNewBanner_left_box_inner_top */
+.psNewBanner_left_box_inner_top {
+	height: 74%;
+	position: relative;
+	z-index: 2;
+}
+
+/* psNewBanner_left_box_inner_bottom */
+.psNewBanner_left_box_inner_bottom {
+	width: 100%;
+	height: 27%;
+	position: relative;
+	z-index: 2;
+}
+
+/* banner-text-box */
+.banner-text-box {
+	height: 40%;
+	width: 60%;
+	float: right;
+	margin-top: 5%;
+	font-family: AvenirLTStd-Black;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-size: 2.5vw;
+	text-transform: uppercase;
+	color: #666;
+	line-height: 1;
+	display: none;
+}
+
+/* psNewBanner_left_box_iconbox */
+.psNewBanner_left_box_iconbox {
+	width: 50%;
+	height: 20%;
+	position: absolute;
+	bottom: 5px;
+	top: 77%;
+	left: 77px;
+}
+
+/* psNewBanner_left_box_iconbox_inner */
+.psNewBanner_left_box_iconbox_inner {
+	width: 75%;
+	height: 100%;
+	float: right;
+	margin-top: 1%;
+}
+
+/* psNewBanner_left_box_inner_top */
+.psNewBanner_left_box_inner_top img {
+	height: 66%;
+	margin-top: 20px;
+}
+
+/* psNewBanner_right_box */
+.psNewBanner_right_box {
+	float: right;
+	width: 50%;
+	height: 100%;
+	padding-top: 1%;
+	position: relative;
+	z-index: 10;
+}
+
+/* psNewBanner_right_box_top */
+.psNewBanner_right_box_top {
+	width: 100%;
+	height: 40%;
+	position: relative;
+	z-index: 2;
+}
+
+/* psNewBanner_right_box_bottom_icon */
+.psNewBanner_right_box_bottom_icon {
+	height: 52.5%;
+	/*xxborder: 2px solid orange;*/
+	position: absolute;
+	z-index: 2;
+	max-height: 40%;
+	bottom: 26%;
+	right: 12%;
+	min-height: 65px;
+}
+
+/* psNewBanner img*/
+.psNewBanner img {
+	position: relative;
+	height: 100%;
+	z-index: 3;
+}
+
+/* psNewBanner_right_box_inner */
+/*.psNewBanner_right_box_inner {
+	float: right;
+	width: 40%;
+	height: 100%;
+	margin-top: -10px;
+}*/
+
+.psNewBanner_right_box_inner {
+    /* float: right; */
+    width: 400px;
+    height: 70px;
+    margin-top: -18px;
+   /* border: solid;*/
+    position: absolute;
+    right: 10px;
+}
+	.covid-19-button{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 1px;
+    margin-top: 0px;
+}
+
+/* psNewBanner_right_box_inner_left */
+.psNewBanner_right_box_inner_left {
+	float: right;
+	width: 85%;
+	height: 100%;
+}
+
+/* psNewBanner_right_box_bottom */
+.psNewBanner_right_box_bottom {
+	width: 100%;
+	height: 40%;
+	padding-bottom: 2px;
+}
+
+/* psBanner */
+.psBanner {
+	background-image: url("../images/header-main.png");
+	background-color: #fff;
+	color: #ffffff;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 20vh;
+	flex-flow: column;
+	position: relative;
+}
+
+/* psBannerTopMenu */
+.psBannerTopMenu {
+	width: 76%;
+	font-family: Roboto-Bold;
+	font-size: 14px;
+	color: #f67d34;
+	padding-top: 2px;
+	float: right;
+	display: flex;
+	justify-content: start;
+	min-width: 247px;
+}
+
+/* psBannerIcons */
+.psBannerIcons {
+	height: 65%;
+	width: 76%;
+	min-width: 247px;
+	float: right;
+}
+
+/* psBannerIconscovid */
+.inks-and-buttons{
+	border:solid;
+	
+}
+.psBannerIconsCovid {
+	height: 65%;
+	width: 76%;
+	min-width: 247px;
+	float: right;
+}
+
+.covid-19 {
+background-image: url(../images/Covid_Red_Button-02-02.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    /* margin-left: 2px; */
+    height: 50px;
+    float: left;
+    width: 50px;
+    /* margin-top: 5px; */
+    text-decoration: none;
+}
+
+/* e-learning */
+.e-learning {
+	background-image: url("../images/e-learning-gray.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* e-learning_footer */
+.e-learning_footer {
+	background-image: url("../images/e-learning-black.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-right: 4px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+	background-size: contain;
+}
+
+/* facebook */
+.facebook {
+	background-image: url("../images/facebook.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* twitter */
+.twitter {
+	background-image: url("../images/twitter.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* Linkedin */
+.Linkedin {
+	background-image: url("../images/Linkedin.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* google */
+.google {
+	background-image: url("../images/google.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* Instagram */
+.Instagram {
+	background-image: url("../images/Instagram.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* youtube */
+.youtube {
+	background-image: url("../images/youtube.png");
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 30px;
+	float: left;
+	width: 30px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* my-PSUP */
+.my-PSUP {
+	background-image: url("../images/my-PSUP.png");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	margin-left: 2px;
+	height: 40px;
+	float: left;
+	width: 40px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+/* psBannerBottomIcons */
+.psBannerBottomIcons {
+	position: absolute;
+	left: 13.9%;
+	width: 31%;
+	bottom: 0;
+	padding-bottom: 10px;
+}
+
+/* psBannerBottomIcons_btm */
+.psBannerBottomIcons_btm {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* link_apc */
+.link_apc {
+	background-image: url("../images/acp-logo.png");
+	background-size: 51px 36.7px;
+	background-repeat: no-repeat;
+	height: 100%;
+	float: left;
+	width: 50px;
+	background-size: contain;
+	image-rendering: high-quality;
+	margin-right: 10px;
+}
+
+/* link_euro */
+.link_euro {
+	background-image: url("../images/EU-logo.png");
+	background-size: 51px 33px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	width: 50px;
+	height: 100%;
+	margin-right: 10px;
+}
+
+/* link_habitat */
+.link_habitat {
+	background-image: url("../images/UN-Habitat.png");
+	background-size: 220px 35px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	width: 60%;
+	height: 100%;
+	max-width: 190px;
+	background-position: center;
+
+}
+
+.psBannerContact {
+	float: left;
+	border-right: 2px solid #f47e34;
+	color: #f47e34;
+	text-align: right;
+	padding-right: 5px;
+	padding-left: 3px;
+}
+
+.psBannerNewsLetter {
+	float: left;
+	color: #666666;
+	width: 50%;
+	padding-left: 5px;
+}
+
+.psBannerNewsLetter a, .psBannerContact a {
+	color: inherit;
+	text-decoration: none;
+	font-family: Roboto-Bold;
+	font-size: 14px;
+}
+
+.psNewBanner_left_box_inner_top img {
+	height: 66%;
+	margin-top: 20px;
+}
+
+.psBannerBottomIcons_btm {
+	height: 75%;
+}
+
+.psNewBanner_right_box_bottom_icon {
+	height: 32%;
+}
+
+#dropdownMenu_ghana.dropdown-item {
+
+    padding: 0;
+
+    }
+
+@media screen and (max-width:1440px) {
+	.psNewBanner_left_box_inner_top img {
+		height: 66%;
+		margin-top: 20px;
+	}
+
+	/*.psNewBanner_right_box {
+		float: left;
+		margin-left: -150px;
+	}*/
+}
+
+@media screen and (max-width:1265px) {
+	.psNewBanner_right_box {
+		float: right !important;
+		margin-left: 0 !important;
+	}
+
+}
+
+/*1165*/
+@media screen and (max-width:1023px) {
+	.psNewBanner_overlay {
+		width: 100%;    /* height: 100%; */
+		z-index: 0;
+		position: relative;
+		background-image: url("../images/banner.png");
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;    /* top: 0; */
+		display: flex;
+		background: #ffffff;
+	}
+
+	.psNewBanner_left_box {
+		float: left;
+		min-width: 100%;
+		height: 100%;    /* border: 2px solid #b4f20c; */
+		position: relative;
+		z-index: 10;
+		margin: 2px;
+		background: #ffffff;
+		
+	}
+
+	.psNewBanner_left_box_inner_top {
+		padding-top: 0px;
+	}
+
+	.psNewBanner_left_box_inner {
+		float: left;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		z-index: 10;
+		padding-top: 20px;		
+		background: #ffffff;
+	}
+
+	.b-lazy {
+		float: left;
+		margin: 10px;
+	}
+
+	.psNewBanner_left_box_inner_top img {
+		height: 70%;
+	}
+
+	.psNewBanner_right_box {
+		float: left;
+		width: 100%;
+		height: 100%;    /* border: 2px solid #b4f20c; */
+		position: relative;
+		z-index: 10;
+		margin: 2px;
+		display: flex;
+	}
+
+	.psNewBanner_right_box_inner {
+		float: left;
+		width: 400px;/*removed the 100%**/
+		height: 70%;    /* border: 2px solid #b4f20c; */
+		margin-top: 40px;
+		background: #fff;
+
+	}
+	.covid-19-button{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 1px;
+    margin-top: -50px;
+}
+	.psNewBanner_left_box_inner_bottom {
+		width: 100%;
+		height: 25%;   
+		position: relative;
+		z-index: 2;
+		background: #ffffff;
+		border-top: 7px solid #f47e34;
+	}
+
+	.psBannerBottomIcons_btm {
+    width: 45%;
+    position: relative;
+    float: right;
+    background: #ffffff;
+    margin-right: -11%;
+	
+	}
+	/* link_habitat */
+	.link_habitat {
+		background-image: url("../images/UN-Habitat_Logo_black.png");
+		
+		position: relative;
+		
+		
+	}
+	.link_apc{
+		
+		position: relative;
+
+	}
+	.link_euro {
+		
+		position: relative;
+	}
+
+ .psNewBanner_left_box_nav_button {
+    margin-left: 5%;
+    background: #ffffff;
+		
+  }
+
+	.psNewBanner_right_box_bottom_icon {
+		height: 30%;
+		margin-bottom: 6px;
+	}
+
+	.psNewBanner_right_box_bottom_icon img {
+		height: 90%;
+	}
+.psBannerTopMenu{
+margin-top: -50px;
+}
+	.psBannerContact {
+
+		/*margin-left: -247px;*/
+	}
+
+	.psBannerNewsLetter {
+
+		/*margin-left: -170px;*/
+	}
+	.psBannerIcons{
+margin-top: -30px;
+	}
+
+
+}
+
+@media screen and (max-width:768px) {
+	body.navbar-is-fixed-top {
+		margin-top: 0px;
+	}
+
+	.psNewBanner_left_box_inner_top img {
+		height: 59%;
+	}
+.psBannerBottomIcons_btm {
+	margin-right: 0%;
+}
+	.psNewBanner_right_box {
+
+		/*margin-left: -300px;*/
+		margin-left: 0px;   /* float: right;
+		    margin-left: 60%;*/
+	}
+
+	.psNewBanner_right_box_inner {
+		float: right;
+	}
+
+.psBannerTopMenu {
+    margin-top: 0px;
+}
+
+	.psBannerContact {
+		margin-left: 0px;		/*margin-left: -247px;*/
+	}
+
+	.psBannerNewsLetter {
+		margin-left: 0px;		/*margin-left: -180px;*/
+	}
+
+	.psBannerNewsLetter a, .psBannerContact a {
+		/*font-size: 13px;*/
+	}
+
+.psBannerIcons {
+    margin-top: 0px;
+}
+	.psBannerIcons .e-learning, .psBannerIcons .facebook, .psBannerIcons .twitter, .psBannerIcons .Linkedin, .psBannerIcons .Instagram, .psBannerIcons .youtube {
+		/*background-size: 20px 20px;
+		margin-left: 1px;
+		height: 20px;
+		width: 20px;*/
+	}
+
+}
+
+@media screen and (max-width:414px) {
+	.psNewBanner_left_box {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+	.psNewBanner_left_box_inner {
+		width: 100%;
+	}
+
+	.psNewBanner_left_box_inner_bottom {
+		width: 100%;
+	}
+
+	.psBannerBottomIcons_btm {
+		height: 100%;
+		width: 75%;
+		margin-top: 1px;
+		margin-right: -13%;
+	}
+
+	.link_apc {
+		height: 100%;
+		width: 30px;
+		margin-right: 5px;
+	}
+
+	.link_euro {
+		width: 30px;
+		height: 100%;
+		margin-right: 5px;
+	}
+
+	.link_habitat {
+		width: 50%;
+		height: 100%;
+		max-width: 150px;
+		background-position: center;
+	}
+
+	.psNewBanner_left_box_inner_top img {
+		height: 50%;
+		margin-top: 20px;
+	}
+
+	.psNewBanner_right_box {
+
+		/*margin-left: -300px;*/
+		margin-left: 0px;		/*margin-top: 15%;*/
+		float: right;
+		width: 50%;
+		z-index: 10;
+	}
+
+	.psNewBanner_right_box_inner {
+		display: none;
+		height: 35%;
+		float: left;
+		margin-top: 5px;
+	}
+	.covid-19-button{
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin: 1px;
+    margin-top: -50px;
+}
+
+	.psNewBanner_right_box_top {
+		height: 20%;
+	}
+
+	.psBannerTopMenu {
+		/*width: 100%;
+		min-width: 100%;*/
+		margin-top: 30px;
+	}
+
+	.psBannerContact {
+		margin-left: 50%;
+		margin-top: -30%;
+	}
+
+	.psBannerNewsLetter {
+		margin-left: 95%;
+		margin-top: -30%;
+	}
+
+	.psBannerNewsLetter a, .psBannerContact a {
+		font-size: 12px;
+	}
+
+	.psBannerIcons {
+		min-width: 150px;
+		margin-top: -26px;
+		margin-right: 40px !important;
+		height: 30%;
+		width: auto;
+	}
+	.psBannerIcons .e-learning, .psBannerIcons .facebook, .psBannerIcons .twitter, .psBannerIcons .Linkedin, .psBannerIcons .Instagram, .psBannerIcons .youtube {
+		background-size: 20px 20px;
+		margin-left: 1px;
+		height: 20px;
+		width: 20px;
+		float: right;
+	}
+
+	.psNewBanner_right_box_bottom {
+	}
+
+	.psNewBanner_right_box_bottom_icon {
+		width: 50%;
+		height: 30%;
+		float: right;
+	}
+
+	.psNewBanner_right_box_bottom_icon img {
+		height: 60%;
+		float: right;		/*margin-right: 340px;	*/
+
+		/*margin-top: 16%;*/
+		margin-right: -5px;
+		margin-top: 29px;
+	}
+
+}
